@@ -1,0 +1,10 @@
+<div>
+<h3>Details about {{pet.name}}</h3>
+<p>Pet Type: {{pet.type}}</p>
+<p>Description: {{pet.description}}</p>
+<p>Skills: {{pet.skills}}</p>
+<p>Likes: {{pet.likes}}</p>
+
+<button type="button" [disabled]="clicked" (click)="likePet(); clicked = true;" >Like this Pet!</button>
+<button (click)='deletePet()'>Adopt this Pet!</button>
+</div>
